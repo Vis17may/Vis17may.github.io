@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title> Epic Comix</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Comix.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1 >Epic Comix</h1>
+       <div class ="navbar">
+         <a href="index.html">Home</a>
+        <div class= "dropdown">
+        <button class="drop">Minecraft <i class="fa fa-caret-down"></i></button>
+        
+        <div class="dropdown-content">
+            <a href="">Wither</a>
+            <a href="">Piglins</a>
+            <a href="">Illagers</a>
+        </div>
+    </div>
+    </div>
+    <img class="title" src="Minecraft/Wither/IMG-1277.jpg" alt="">
+    <h2> Wither: A Minecraft Story</h2>
+    <img onload="currentSlide" src="" alt="">
+    <p class="Summary">Life isn't fair. Wilson Stone learned that the hard way. After he invents a deadly poison. he causes a skeleton epidemic. In an accidental trip to the nether, he gets blessed by the god Herobrine. As he goes on a quest to find the powerful nether star, he gets revenge on the overworld. Will an unlikely hero rise to defeat him, or will the Wither's rampage parch the world of life... </p>
+    <script type="text/javascript">
+        var slide_index=0;
+        displaySlides(slide_index);
+        function nextSlide(n) {
+             displaySlides(slide_index += n);
+        }
+        function currentSlide(n){
+            displaySlides(slide_index = n);
+        }
+        function displaySlides(n){
+            var i;
+            var slides = document.getElementsByClassName("showslide");
+            if (n >slides.length) {slide_index=slides.length}
+            if(n<1) {slide_index=1}
+            for (i=0; i <slides.length; i++){
+                slides[i].style.display="none";    
+            }
+            slides[slide_index - 1].style.display="block";
+        }
+     </script>
+    <div class="slidercontainer">
+        <div class="showslide">
+            <img onload="currentSlide(1)"  src="Minecraft/Wither/IMG-1278.jpg" alt="">
+        </div>
+        <div class="showslide">
+            <img   src="Minecraft/Wither/IMG-1279.jpg" alt="">
+        </div>
+        <div class="showslide">
+            <img  src="Minecraft/Wither/IMG-1280.jpg" alt="">
+        </div>
+         <!--<div class="showslide">
+            <img   src="" alt="">
+        </div>-->
+        <div class="showslide">
+            <img   src="Minecraft/Wither/IMG-1282.jpg" alt="">
+        </div>
+        <div class="showslide">
+            <img   src="Minecraft/Wither/IMG-1283.jpg" alt="">
+        </div>
+        <div class="showslide">
+            <img   src="Minecraft/Wither/IMG-1284.jpg" alt="">
+        </div>
+        <div class="showslide">
+            <img   src="Minecraft/Wither/IMG-1285.jpg" alt="">
+        </div>
+         <div class="showslide">
+            <img   src="Minecraft/Wither/IMG-1286.jpg" alt="">
+        </div>
+         <div class="showslide">
+            <img   src="Minecraft/Wither/IMG-1287.jpg" alt="">
+        </div>
+        
+    <span class="fa fa-chevron-left left" onclick="nextSlide(-1)">
+    </span>
+    <span class="fa fa-chevron-right right" onclick="nextSlide(1)">
+    </span>
+  </div>
+    </body>
+</html>

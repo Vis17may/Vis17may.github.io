@@ -1,0 +1,138 @@
+h1 {
+    font-family: tahoma;
+    color: #6aff59   }
+button{
+    font-family: tahoma;
+    background-color: #34bf87;
+    padding: 10px;}
+body {
+    background-color:black ;
+    color:#33ff52; }
+.contents {
+    position: relative;
+    top: 60px;}
+#talkbubble {
+      width: 120px;
+      height: 80px;
+      background: #36ff86;
+    border: #36ff86;
+      position: relative;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+    }
+    #talkbubble:before {
+      content: "";
+      position: absolute;
+      right: 40%;
+      top: -25px;
+      width: 0;
+      height: 0;
+     /* border-top: 13px solid transparent;*/
+      border-bottom: 26px solid #36ff86;
+      border-right: 13px solid transparent;
+    border-left: 13px solid transparent; }
+
+table, th, td, tr {
+    
+    border: 2px solid #32a899;
+    border-collapse: collapse;
+    font-family: Tahoma;
+}
+
+    /*Navigation bar*/
+
+.navbar{
+    overflow: hidden;
+    background-color:#3dff51;
+    border: 3px solid black;
+    font-family: tahoma;
+}
+.navbar a {
+    text-decoration:none;
+    color:black;
+    font-size: 20px;
+    float: left;
+    font-family: tahoma;
+    text-align: center;
+    padding: 14px 16px;
+}
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+.dropdown .drop{
+    font-size: 20px;
+    font-family: tahoma;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 0;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+.navbar a:hover, .dropdown-content:hover .drop {
+    background-color:#00ff73 ;
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 150px
+    box-shadow:0px 8px 16px 0px;
+}
+.dropdown-content a{
+    float: none;
+    color:;
+    padding: 12px 16px;
+    display: block;
+    text-align: center;
+    background: #1efa64;
+    z-index: 1;
+}
+.dropdown-content a: hover{
+    background:#03fc45;
+}
+p{
+    font-family:tahoma;
+}
+.Summary{
+    font-weight:bold;}
+
+.showslide{
+    display:none;
+}
+.slidercontainer {
+    max-width: 500px;
+    position:relative;
+    margin:auto;
+    }
+.showslide img {
+    width: 500px;
+    
+}
+.left, .right{
+    cursor: pointer;
+    position:absolute;
+    top:50%;
+    width:auto;
+    padding:16px;
+    margin-top:-22px;
+    color: #00ff73;
+    font-weight:bold;
+    font-size: 18px;
+    transition:0.6s ease;
+    border-radius:0 3px 3px 0;
+}
+.right{
+    right:0;
+    border-radius: 3px 0 0 3px;
+}
+.left:hover, .right:hover{
+    background-color:rgba(115, 115, 115,0.6);
+}
+a{color: #33ff92;}
+.title{width: 200px;}
+h2{font-family: tahoma}
